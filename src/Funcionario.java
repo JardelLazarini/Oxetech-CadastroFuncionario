@@ -2,7 +2,7 @@ public class Funcionario {
     String nome;
     String cpf;
     String matricula;
-    String departamento
+    String departamento;
     double salario;
 
     public Funcionario (String nome, String cpf, String matricula,String departamento, double salario) {
@@ -13,7 +13,22 @@ public class Funcionario {
         this.salario = salario;
     }
 
-    public int calcularSalario() {
-        return this.salario
+    public double getSalario() {
+        return this.salario;
+    }
+    public String getDepartamento(){
+        return this.departamento;
+    }
+
+    public String getMatricula(){
+        return this.matricula;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCpf() {
+        return cpf;
     }
 }
