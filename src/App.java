@@ -42,19 +42,7 @@ public class App {
                 cpfValido = true;
             }
         }
-/*
-        while (!cpfNovo) {
-            for (Funcionario funcionario : funcionarios)
-                if (funcionario.getCpf().equals(cpf)) {
-                    System.out.println("Este cpf já está cadastrado no sistema. Por favor, tente novamente.");
-                    break;
-                } else {
-                    cpfNovo = true;
-                    novoFuncionario.nextLine();
-                }
 
-        }
-*/
         String matricula = null;
         boolean matriculaNova = false;
 
@@ -96,33 +84,6 @@ public class App {
         Funcionario F1 = new Funcionario(nome, cpf, matricula, departamento, salario);
         funcionarios.add(F1);
     }
-/*
-        boolean matriculaJaCadastrada = false;
-        boolean cpfJaCadastrado = false;
-        for (Funcionario funcionario : funcionarios) {
-            if (funcionario.getMatricula().equals(matricula)) {
-                matriculaJaCadastrada = true;
-                break;
-            } else if (funcionario.getCpf().equals(cpf)) {
-                cpfJaCadastrado = true;
-                break;
-
-            }
-        }
-
-        if (matriculaJaCadastrada) {
-            System.out.println("Este número de matrícula já consta no sistema. Por favor, tente novamente.");
-        } else if (cpfJaCadastrado) {
-            System.out.println("Este cpf já está cadastrado no sistema. Por favor, tente novamente.");
-        } else if (cpf.length() != 9 || !cpf.matches("[0-9]+")) {
-            System.out.println("CPF inválido. O CPF deve conter 9 (nove) números. Favor digitar SOMENTE os números.");
-            } else {
-                Funcionario F1 = new Funcionario(nome, cpf, matricula, departamento, salario);
-                funcionarios.add(F1);
-            }
-        }*/
-
-
         public static void remover (Scanner novoFuncionario){
 
 
